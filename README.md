@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -73,3 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # Smooth-Sequential-Image-Reveal-with-GSAP-in-React
 This setup uses GSAP to animate images into view one-by-one, providing a smooth transition. Once all images are aligned and visible on the screen, it triggers the display of text content "Hi I Am Dev," offering a dynamic and engaging visual experience.
 >>>>>>> a73614a52d7d70effa287d8fa04148b786d97ac7
+=======
+# Smooth-Sequential-Image-Reveal-with-GSAP-in-React
+This setup uses GSAP to animate images into view one-by-one, providing a smooth transition. Once all images are aligned and visible on the screen, it triggers the display of text content "Hi I Am Dev," offering a dynamic and engaging visual experience.
+>>>>>>> fc354ed29548bed5449ecd4cd24cda0f6ff90704
