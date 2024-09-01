@@ -131,3 +131,29 @@ nav {
   height: 20%;
   background: gray;
 }
+
+.more-button-wrapper {
+  position: fixed; /* Fixes the position relative to the viewport */
+  top: 20px; /* Positions the button 20px from the top */
+  right: 20px; /* Positions the button 20px from the right */
+  z-index: 10; /* Ensures the button is above other elements */
+}
+
+.more-button {
+  padding: 10px 30px;
+  background-color: black;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 5px solid #ff6600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.more-button:hover {
+  background-color: #ffffff;
+  color: #ff6600;
+  border-color: #ff6600;
+}

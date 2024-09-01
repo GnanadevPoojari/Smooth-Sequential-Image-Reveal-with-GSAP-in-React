@@ -31,10 +31,8 @@ const Page2 = () => {
 
   return (
     <div className="fi">
-      <h1 className="animated-heading">Welcome to Pages</h1>
-      <p className="animated-text">
-        This is the content of Pages, made more interesting.
-      </p>
+      <h1 className="animated-heading"></h1>
+      <p className="animated-text"></p>
 
       <button className="cta-button" onClick={handleExploreMoreClick}>
         {showVideo ? "Hide Video" : "Explore More"}

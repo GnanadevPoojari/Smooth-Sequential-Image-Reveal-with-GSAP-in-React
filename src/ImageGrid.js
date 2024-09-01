@@ -71,6 +71,15 @@ const ImageGrid = () => {
 
   return (
     <div className="content">
+      {/* More button placed at the top right corner */}
+      {showContent && (
+        <div className="more-button-wrapper">
+          <Link to="/Page2" className="more-button">
+            More
+          </Link>
+        </div>
+      )}
+
       {!showContent && (
         <div className="container">
           {Array(5)
@@ -92,7 +101,6 @@ const ImageGrid = () => {
         </div>
       )}
 
-      {/* Conditionally render the text content based on state */}
       {showContent && (
         <div className="container">
           {Array(5)
@@ -112,30 +120,6 @@ const ImageGrid = () => {
               </div>
             ))}
         </div>
-      )}
-      {showContent && (
-        <nav>
-          <div className="nav-item">
-            <a href="./Page2" id="active">
-              Hi
-            </a>
-          </div>
-          <div className="nav-item">
-            <Link to="/Page2" id="active">
-              {/* Use Link component for routing */}I
-            </Link>
-          </div>
-          <div className="nav-item">
-            <a href="/Page2" id="active">
-              am
-            </a>
-          </div>
-          <div className="nav-item">
-            <a href="/Page2" id="active">
-              Dev
-            </a>
-          </div>
-        </nav>
       )}
     </div>
   );
