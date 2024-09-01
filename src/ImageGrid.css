@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #141414;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images are not distorted */
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.nav-item a {
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.55;
+  font-size: x-large;
+}
+
+.nav-item a#active {
+  opacity: 1;
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1em;
+}
+
+.container .col {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.col .item {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  background: gray;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.c-1,
+.c-3,
+.c-5 {
+  top: 100%;
+}
+
+.c-1 .item,
+.c-3 .item,
+.c-5 .item {
+  top: 100%;
+}
+
+.c-2 .item,
+.c-4 .item {
+  top: -100%;
+}
+
+@media (max-width: 900px) {
+  .slide-num {
+    text-align: left;
+    padding-left: 2em;
+    margin-bottom: 2.5em;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .icon,
+  .icon-2 {
+    padding: 0 1em;
+    font-size: 16px;
+  }
+
+  .preview {
+    width: 60px;
+    height: 40px;
+  }
+}
+
+.each-col {
+  position: relative;
+  flex: 1;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.each-item {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 20%;
+  background: gray;
+}

@@ -1,0 +1,79 @@
+/* Modal background overlay */
+.fi {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/assets/back1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Button styling */
+.cta-button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #ff6347; /* Tomato color */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff4500; /* Darker shade */
+  transform: scale(1.05);
+}
+
+/* Video container and button styling */
+.video-container {
+  position: relative;
+  max-width: 80%;
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  width: 800px;
+  height: 600px;
+}
+
+.video {
+  width: 100%;
+  border: none;
+}
+
+.video-container:hover .play-pause-btn {
+  opacity: 1;
+}
+
+.play-pause-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.play-pause-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
